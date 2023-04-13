@@ -1,0 +1,422 @@
+@charset "utf-8";
+
+html {
+  font-size: 100%;
+}
+
+body {
+  line-height: 1.7;
+  color: black;
+  margin: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+img {
+  max-width: 100%
+}
+
+.logo {
+  width: 50px;
+  margin-top: 8px;
+}
+
+.main-nav {
+  display: flex;
+  font-size: 1.25rem;
+  text-transform: uppercase;
+  margin-top: 34px;
+  list-style: none;
+}
+
+.main-nav li {
+  margin-left: 36px;
+}
+
+.main-nav a {
+  color: black;
+}
+
+.main-nav a:hover {
+  color: silver;
+}
+
+.page-header {
+  display: flex;
+  justify-content: space-between;
+}
+
+.wrapper {
+ max-width: 1100px;
+ margin: 0 auto;
+ padding: 0 4%;
+}
+
+/* HOME */
+.home-content {
+  text-align: center;
+  margin-top: 10%;
+}
+
+.home-content p {
+  font-size: 1,125ren;
+  margin: 10px 0 42px;
+}
+
+.page-title {
+ font-size: 1.375ren;
+ text-transform: uppercase;
+ font-weight:normal;
+}
+
+.button {
+ font-size: 1.375ren;
+ background: blue;
+ color: white;
+ border-radius: 8px;
+ padding: 18px 32px;
+}
+
+.button:hover {
+  background: skyblue;
+}
+
+.big-bg {
+  background-size: cover;
+  background-position: center top;
+  background-repeat: no-repeat;
+}
+
+#news {
+  background-image: url(coffee_cup_paper.png),linear-gradient(rgb(95, 228, 95), white);
+  height: 270px;
+  margin-bottom: 40px;
+}
+
+#news .page-title {
+ text-align: center;
+}
+
+footer {
+  background: brown;
+  text-align: center;
+  padding: 26px 0 ;
+}
+
+footer p {
+  color: white;
+  font-size: 8px;
+}
+
+article {
+  width: 74%;
+}
+
+aside {
+  width: 22%;
+}
+
+.news-contents {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 50px;
+}
+
+.post-info {
+  position: relative;
+  padding-top: 4px;
+  margin-bottom: 40px;
+}
+
+.post-date {
+  background: skyblue;
+  border-radius: 50%;
+  color: white;
+  width: 100px;
+  height: 100px;
+  font-size: 1.625rem;
+  text-align: center;
+  position: absolute;
+  top: 0;
+  padding-top: 10px;
+}
+
+.post-date span {
+  font-size: 1px;
+  border-top:1px black solid;
+  padding-top: 8px;
+  display: block;
+  width: 80%;
+  margin: 0 auto;
+}
+
+.post-title {
+  font-size: 30px;
+  font-weight: normal;
+}
+
+.post-title,
+.post-cat {
+ margin-left: 120px;
+}
+
+article img {
+  margin-bottom: 20px;
+}
+
+article p {
+  margin: 8px 8px;
+}
+.sub-title {
+  font-size: 24px;
+  padding: 0 8px 8px;
+  border-bottom: 1px black solid;
+  font-weight: normal,
+}
+
+aside p {
+  padding: 0 10px;
+}
+
+.sub-menu {
+  margin-bottom: 60px;
+  list-style: none;
+}
+
+.sub-menu li {
+  border-bottom: 1px silver solid;
+}
+
+.sub-menu a {
+  color: gray;
+  padding: 10px;
+  display: block;
+}
+
+.sub-menu a:hover {
+  color: black
+}
+
+#menu {
+  background-image: url(fukurou_cafe.png);
+  min-height: 100vh;
+}
+
+.menu-content {
+  max-width: 560px;
+  margin-top: 10%;
+}
+
+.menu-content .page-title {
+  text-align: center;
+}
+
+.menu-content p {
+  font-size: 1.125rem;
+  margin: 10px 0 0;
+}
+
+.grid {
+  display: grid;
+  gap: 26px;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  margin-top: 6%;
+  margin-bottom: 50px;
+}
+
+.big-box {
+  grid-column: 1 / 3;
+  grid-row: 1 / 3;
+}
+
+.big-box img {
+  height: 94%;
+  width: 100%;
+  object-fit: cover;
+}
+
+#contact {
+  background-image: url(cafe_nomad_man.png);
+  min-height: 100vh;
+}
+
+/* フォーム */
+form div {
+ margin-bottom: 1.4px;
+ }
+label {
+  font-style: 1.125rem;
+  margin-bottom: 10px;
+  display: block;
+}
+input[type=text],
+input[type="email"],
+textarea {
+  background: rgba(255,255,255,.5);
+  border: 1px solid black;
+border-radius: 5px;
+padding: 10px;
+font-size: 1rem;
+}
+
+input[type="text"],
+inut[type="email"], {
+  width: 100%;
+  max-width: 240px;
+}
+
+textarea {
+  width: 100%;
+  max-width: 480px;
+  height: 6rem;
+}
+
+input[type="submit"] {
+ border: none;
+ cursor: pointer;
+ line-height: 1;
+}
+
+/* location */
+
+#location {
+  padding: 4% 0;
+}
+
+#location .wrapper {
+  display: flex;
+  justify-content: space-between;
+}
+.location-info {
+  width: 22%;
+}
+.location-info p {
+  padding: 12px 10px;
+}
+.location-map {
+  width: 74%;
+}
+
+iframe {
+  width: 100%;
+}
+
+#sns {
+  background: skyblue;
+padding: 4% 0;
+}
+
+#sns .wrapper {
+display: flex;
+justify-content: space-between;
+}
+#sns .sub-title {
+  margin-bottom: 30px;
+}
+.sns-box {
+  width: 30%;
+}
+
+
+@media (max-width: 600px) {
+.page-title {
+  font-size:16px;
+ }
+
+ .main-nav {
+  font-size: 8px;
+  margin-top: 10px;
+ }
+
+.main-nav li {
+  margin:0 20px;
+}
+
+.home-content {
+  margin-top: 20%;
+}
+
+.page-header {
+  flex-direction: column;
+  align-items: center;
+}
+
+.news-contents {
+  flex-direction: column;
+}
+
+article,aside {
+  width: 100%
+}
+
+.news .page-title {
+  margin-top: 30px;
+}
+aside {
+  margin-top: 60px;
+}
+
+.post-info {
+  margin-bottom: 30px;
+}
+
+.post-date {
+  width:70px;
+  height: 70px;
+  font-size: 8px;
+}
+.post-title {
+  font-size: 8px;
+}
+
+.post-cat {
+  font-size: 8px;
+  margin-top: 10px;
+}
+.post-title,
+.post-cat {
+  margin-left: 80px;
+}
+
+/* menu */
+.menu-content {
+  margin-top: 20%
+}
+
+.big-box {
+  grid-column: auto;
+  grid-row: auto;
+}
+.big-box img {
+  height: 100%;
+}
+
+
+
+/* CONTACT */
+#contact .page-title {
+  margin-top: 40px;
+}
+
+/* FORM */
+input[type="text"],
+input[type="email"],
+textarea {
+  max-width: 100%;
+}
+
+#location .wrapper,
+#sns .wrapper {
+  flex-direction:column;
+}
+.location-info,
+.location-map,
+.sns-box {
+  width: 100%;
+}
+.sns-box {
+  margin-bottom: 30px;
+}
+}
